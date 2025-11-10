@@ -1,0 +1,27 @@
+[package]
+name = "vault-program"
+version = "0.1.0"
+description = "Program to store race data and send prizes"
+edition = "2021"
+repository = "https://github.com/freshdots/racer-vault"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "vault_program"  # Changed from cults_rust
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+custom-heap = []
+custom-panic = []
+anchor-debug = []
+init-if-needed = []  # Add this line
+
+[dependencies]
+anchor-lang = { version = "0.31.1", features = ["init-if-needed"] }  # Add feature here
+anchor-spl = "0.31.1"

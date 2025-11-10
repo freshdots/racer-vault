@@ -1,0 +1,20 @@
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+cults_rust = "3UyCLPaBTuQ19B88M8ZznNwu75FqB85Af7s2X9sRDDk2"
+vault_program = "5ggd1t1UMGWHyiTGKmSgftmWAqtJnt8RmBh447s3DN8"
+racer_burn = "6Lnp85ptoaM2Gv5cAf5SaBERbvAfK1Qw8pVp5qK9JBxE"
+
+[programs.mainnet]
+vault_program = "5ggd1t1UMGWHyiTGKmSgftmWAqtJnt8RmBh447s3DN8"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "mainnet"
+wallet = "creator-keypair.json"
